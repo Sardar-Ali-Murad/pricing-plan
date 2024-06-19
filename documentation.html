@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <title>Tags Generator API Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #007BFF;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 5px solid #007BFF;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .endpoint, .response {
+            margin-bottom: 20px;
+        }
+
+        .endpoint code, .response pre {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tags Generator API Documentation</h1>
+
+        <section class="endpoint">
+            <h2>Get TikTok Tags</h2>
+            <p>Retrieve relevant tags for TikTok content by providing a query.</p>
+            <h2>Request Method</h2>
+            <p>GET</p>
+            <h3>Endpoint</h3>
+            <code>https://tags-lime.vercel.app/tiktokTags/{query}</code>
+            <h3>Example Response</h3>
+            <pre>
+{
+    "data": {
+        "query": "baby dance",
+        "tags": [
+            "#babydance",
+            "#babydancescoobydoopapa",
+            "#babysongs",
+            "#baby",
+            "#babydancevideos",
+            "#kidsdance",
+            "#babyboss-dance",
+            "#babysharkdance",
+            "#dance",
+            "#babyshark",
+            "#babysong"
+        ]
+    }
+}
+            </pre>
+        </section>
+
+        <section class="endpoint">
+            <h2>Get YouTube Tags</h2>
+            <p>Streamline tag retrieval for YouTube videos by providing a query.</p>
+            <h2>Request Method</h2>
+            <p>GET</p>
+            <h3>Endpoint</h3>
+            <code>https://tags-lime.vercel.app/youtubeTags/{query}</code>
+            <h3>Example Response</h3>
+            <pre>
+{
+    "data": {
+        "query": "Shark Tank US | Sharks Are Shocked At The Cost Of The Smart Tire Company",
+        "tags": [
+            "shark tank us",
+            "shark tank",
+            "shark tank usa",
+            "mark shark tank",
+            "shark tank australia",
+            "shark tank pitches",
+            "shark tank best pitches",
+            "kevin shark tank",
+            "american shark tank",
+            "shark tank bad pitches",
+            "lori shark tank",
+            "shark tank covid",
+            "shark tank season 12",
+            "shark tank america",
+            "daymond shark tank",
+            "shark tank usa worst pitches",
+            "shark tank moments",
+            "shark tank us kevin hart",
+            "shark tank best pitch",
+            "shark tank deals",
+            "shark tank pitch",
+            "shark tank us best pitches",
+            "shark tank us angry"
+        ]
+    }
+}
+            </pre>
+        </section>
+
+        <footer>
+            &copy; 2024 Tags Generator API Documentation. Created by <a href="#">@sardar-ali-murad</a>.
+        </footer>
+    </div>
+</body>
+</html>
