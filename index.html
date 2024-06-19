@@ -1,13 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font Awesome Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <title>
+      Responsive pricing cards using HTML CSS and JavaScript - @code.scientist x
+      @codingtorque
+    </title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+      <h5 class="badge">Pricing Plans</h5>
+      <h1 class="heading">Choose Your Best Pricing Plan</h1>
+      <div class="card_group">
+        <div class="pricing-card">
+          <i class="fab fa-telegram-plane"></i>
+          <span>Basic</span>
+          <h4 class="price">$0.00</h4>
+          <ul class="package_list">
+            <li>500 Requests / Monthly</li>
+            <li>Free for Lifetime</li>
+            <li>No Credit Card Required</li>
+          </ul>
+          <a href="#" class="get_started_btn">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <i class="fas fa-plane"></i>
+          <span>Intermediate</span>
+          <h4 class="price">$5.00</h4>
+          <ul class="package_list">
+            <li>500,000 Requests / Monthly</li>
+            <li>Standard Support</li>
+          </ul>
+          <a href="#" class="get_started_btn">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <i class="fas fa-rocket"></i>
+          <span>Advanced</span>
+          <h4 class="price">$10.00</h4>
+          <ul class="package_list">
+            <li>Any requests volume you need</li>
+            <li>24/7 Support</li>
+          </ul>
+          <a href="#" class="get_started_btn">Get Started</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
